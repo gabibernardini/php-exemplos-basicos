@@ -1,22 +1,22 @@
 <?php
 
-// Vetor (array simples)
-$alunos = ["10", "8", "6", "7", "8"];
+// Vetor
+$notas = [10, 8, 6, 0, 9];
 
-// Exibindo (Usando laço)
-foreach ($alunos as $indice => $alunos) {
-    echo "Nota $indice: $alunos\n";
+// Exibindo
+foreach ($notas as $indice => $nota) {
+    echo "Nota $indice: $nota \n";
 }
 
-// Média
-$media = $alunos[0] + $alunos[1] + $alunos[2] + $alunos[3] + $alunos[4] / 5;
+//Média
+$média = ($notas[0] + $notas[1] + $notas[2] + $notas[3] + $notas[4]) / 5;
 
-// Exibindo as notas
+//Exibindo a média
 echo "\n \n";
-echo ": \n";
-foreach ($matriz as $linha) {
-    foreach ($linha as $piloto) {
-        echo $piloto . " | ";
-    }
-    echo "\n";
-}
+echo "Média do grupo: $média \n";
+
+// Exibindo a maior e a menor nota
+$maiornota = max($notas);
+$menornota = min($notas);
+echo "Maior nota: $maiornota \n";
+echo "Menor nota: $menornota \n";
